@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+<head>
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js">
+	</script>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="js/clock.js"></script>
+	<style type="text/css">
+		#clock{
+			text-align: center;
+			font-size: 200px;
+			margin-top: 40px;
+		}
+		#hr,#min,#sec{
+			padding: 10px;
+			font-size: 100px;
+		}
+		#hr{
+			border-top-left-radius: 20px;
+			border-bottom-left-radius: 20px;
+		}
+		#sec{
+		border-top-right-radius: 20px;
+		border-bottom-right-radius: 20px;
+		}
+		#dots{
+			padding: 10px 20px;
+		}
+	</style>
+</head>
+<body>
+	<div id="clock">
+		<span id="hr"></span>
+		<span id="dots">:</span>
+		<span id="min"></span>
+		<span id="dots">:</span>
+		<span id="sec"></span>
+		<span id="pm">AM</span>
+	</div>
+</body>
+</html>
