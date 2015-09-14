@@ -15,40 +15,73 @@
 			margin-top: 200px;
 		}
 		#hr,#min,#sec,#milli{
-			padding: 10px 10px;
-			width: 15%;
+			padding: 10px 20px;
 			display: inline-block;
-			margin: auto;
-			margin-left: -40px;
-			margin-right: -40px;
+			margin: auto -30px;
 		}
 		#hr{
-			border-top-left-radius: 20px;
-			border-bottom-left-radius: 20px;
+			border-top-left-radius: 40px;
+			border-bottom-left-radius: 40px;
 		}
 		.dots{
 			padding: 10px;
 			display: inline-block;
-			width: 5%;
 			margin: auto;
 		}
 		#pm{
 			width: 15%;
 			display: inline-block;
-			padding: 10px 10px;
-			border-top-right-radius: 20px;
-			border-bottom-right-radius: 20px;
+			padding: 10px;
+			border-top-right-radius: 40px;
+			border-bottom-right-radius: 40px;
 			background: rgba(50,50,50,.7);
+			margin-left: 5px;
 		}
+		
+		nav{
+			margin-top: 30px;
+			width: 100%;
+			font-size: 40px;
+			text-align: center;
+			font-weight: bold;
+			cursor: pointer;
+			position: relative;
+		}
+		nav ul{
+			list-style: none;
+			position: relative;
+		}
+		nav ul li{
+			width: 25%;
+			display: inline-block;
+			height:50px;
+			border-bottom: 4px solid transparent;
+			position:relative;
+			background:rgb(100,100,100);
+		}
+		nav ul li:hover{
+			background: black;
+			color:#00BF60;
+			border-bottom: solid 4px #00BF60;
+		}
+
 	</style>
 </head>
 <body>
+	<nav>
+		<ul>
+			<li>Nav 1
+			<li>Nav 2
+			<li>Nav 3
+			<li>Nav 4
+		</ul>
+	</nav>
 	<div id="clock">
-		<div id="hr"></div>
+		<div id="hr"><span id="h"></div>
 		<div class="dots">:</div>
-		<div id="min"></div>
+		<div id="min"><span id="m"></div>
 		<div class="dots">:</div>
-		<div id="sec"></div>
+		<div id="sec"><span id="s"></span></div>
 		<div class="dots">:</div>
 		<div id="milli"></div>
 		<div id="pm">AM</div>
